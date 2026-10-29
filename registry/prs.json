@@ -11,7 +11,9 @@
       "title": "Repository foundation only",
       "origin": "owner_authorized_foundation",
       "prs": [],
-      "contributingPrs": [],
+      "contributingPrs": [
+        1
+      ],
       "dependsOn": [],
       "implementationStatus": "foundation_only",
       "acceptanceCriteria": [

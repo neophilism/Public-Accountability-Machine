@@ -18,7 +18,7 @@ All operational AM-07 tasks, engine version qualification, runtime integration, 
 
 ## Evidence
 
-Source and local validation belong in the foundation PR. CI results and merge state must be checked on GitHub for the exact PR head; these are separate from local checks. Seven automated test groups validate the declarative boundary, upstream inventory, original task identity/dependencies/status, and rejection of modified design bytes. They do not exercise any live engine or provider.
+Source is recorded in [foundation PR #1](https://github.com/neophilism/Public-Accountability-Machine/pull/1). The initial implementation commit is `07aa3f5c103f5ebdb758eb515dd6b5804bd853e9`. Clean offline `npm ci --ignore-scripts --offline` and `npm run check` passed on Node 24.22.1 with seven passing test groups. Initial-head GitHub [Foundation checks run 40794486941](https://github.com/neophilism/Public-Accountability-Machine/actions/runs/40794486941) passed; later heads require separate final-head verification. CI results and merge state must be checked on GitHub for the exact PR head; these are separate from local checks. Seven automated test groups validate the declarative boundary, upstream inventory, original task identity/dependencies/status, and rejection of modified design bytes. They do not exercise any live engine or provider.
 
 ## Rollback
 

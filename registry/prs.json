@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "repository": "neophilism/Public-Accountability-Machine",
+  "roadmapVersion": 1,
+  "planVerified": true,
+  "plannedPrCount": 9,
+  "haltAfterFoundation": true,
+  "units": [
+    {
+      "id": "PAM-000",
+      "title": "Repository foundation only",
+      "origin": "owner_authorized_foundation",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [],
+      "implementationStatus": "foundation_only",
+      "acceptanceCriteria": [
+        "Preserve approved source and stable roadmap identifiers.",
+        "Validate static foundation metadata and stopping boundaries.",
+        "Push and record foundation; stop operational application work."
+      ]
+    },
+    {
+      "id": "AM-07.01",
+      "title": "Objective and dependency planner",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-01.04",
+        "AM-05.03",
+        "AM-06.08"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "Cycle, missing-input and forbidden-action proposals are rejected before execution.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.02",
+      "title": "Agent registry and capability broker",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "A researcher cannot send, publish, decrypt or spend outside its task grant.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.03",
+      "title": "Persistent memory and checkpoints",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01",
+        "AM-07.02"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "A restarted agent resumes from a verified checkpoint without importing unrelated project memory.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.04",
+      "title": "Autonomy modes and operator controls",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01",
+        "AM-07.02"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "Policy changes revoke stale work and all state transitions have visible reasons.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.05",
+      "title": "Budget reservation and metering",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "Simultaneous jobs cannot overspend a shared cap through a check-then-act race.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.06",
+      "title": "Effort lane scheduler",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01",
+        "AM-07.05"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "Unequal worker counts, retries and waiting replies do not hide lane allocation differences.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.07",
+      "title": "Prompt injection and tool abuse evaluation",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01",
+        "AM-07.02",
+        "AM-07.04"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "External instructions cannot change policy, leak a private case or trigger unauthorized outreach.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    },
+    {
+      "id": "AM-07.08",
+      "title": "Recovery and autonomy acceptance",
+      "origin": "original",
+      "prs": [],
+      "contributingPrs": [],
+      "dependsOn": [
+        "AM-07.01",
+        "AM-07.02",
+        "AM-07.03",
+        "AM-07.04",
+        "AM-07.05",
+        "AM-07.06",
+        "AM-07.07"
+      ],
+      "requirements": [
+        "R13",
+        "R25",
+        "R30"
+      ],
+      "acceptanceCriteria": [
+        "A long synthetic investigation resumes after faults with no untracked effect or fabricated completion.",
+        "Provide the authorized visual or table view, source-bound test evidence and documented failure behavior."
+      ],
+      "implementationStatus": "planned"
+    }
+  ]
+}

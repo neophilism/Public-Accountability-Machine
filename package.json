@@ -1,0 +1,13 @@
+{
+  "name": "@accountability/public-accountability-machine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Foundation-only scaffold for the country-neutral downstream accountability application",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "validate": "node scripts/validate-foundation.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run validate && npm test"
+  }
+}

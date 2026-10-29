@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+.env
+.env.*
+*.log
+private/
+recovery/
+*.zip

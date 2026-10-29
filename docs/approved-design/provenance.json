@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "source": "approved-design directory of the preserved source-recovery archive",
+  "sourceArchiveSha256": "4f3094b47c522a1fca940b3822fb74c130d61ddc824ecc5036f70aa719fc10a7",
+  "interpretation": "Original bytes retained. Proposed/planned statuses are preserved, not converted into implementation or acceptance claims. Hashes describe byte integrity, not independent authenticity or runtime authority.",
+  "files": {
+    "development_backlog.json": "eee514fe5189b6e3133f8c6781b6eff4546dfea4314d334ac21f21ad3cfdae74",
+    "domain_contracts.json": "98ccb94433b5878de815d0bf56a57f48bdd0e2e9eadbcd9efbae919493b2fb8f",
+    "engine_catalog.json": "7e5b265cdb81c2255e01955db08ef4f8ea6b5e480c0866aacaa44cccf973eea8",
+    "requirements.json": "4091ff2747785906219484b359b5b1720cce97e1cad6f06590b84bd99ab49a2e"
+  }
+}
